@@ -53,7 +53,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     //submit-envio
     form.addEventListener('submit', function(e){
-        e.preventDefault;
+        e.preventDefault();
 
         if(validateForm()){
             //simular envio
@@ -65,7 +65,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 successMessage.classList.add('show');
                 form.reset();
                 form.style.opacity = '1';
-                form.style.pointerEvents = 'autor';
+                form.style.pointerEvents = 'auto';
 
                 //Resetar todas as classes após reset
                 document.querySelectorAll('.form-control').forEach(control => {
